@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod 755 /my_dir
+chmod 755 /home/alx-system_engineering-devops/0x01-shell_permissions/my_dir
