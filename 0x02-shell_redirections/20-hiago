@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -v [C&&c]
+grep -v [Cc] 
