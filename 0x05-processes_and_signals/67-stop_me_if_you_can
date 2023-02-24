@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script kills task 4 without kill or killall
+pkill -f "bash ./7-highlander"

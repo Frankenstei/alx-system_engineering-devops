@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# This script displays bash process without ps
+pgrep bash | sed -e 's/$/ bash/'
