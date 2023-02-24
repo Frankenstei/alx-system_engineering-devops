@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# for in command
-for i in *
-do
-    echo "$i" | cut -d'-' -f2
-done
+# print file names
 
+for file_name in *
+do
+	echo "$file_name" | cut -d "-" -f2-
+done
