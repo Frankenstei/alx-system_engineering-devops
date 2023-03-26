@@ -675,7 +675,7 @@
 <script src="/js/stripe_payment_form.js?v=1663831496"></script>
 <script>
 
-	var PHPSESSID = 'c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+	var PHPSESSID = 'c266c14c74e73f901a1c758beedf08904ace1e88';
 	var STRIPE_PUBLIC_KEY = 'pk_live_qdaFEN4KBX40UvEYnwlKCIX8';
 	var STRIPE_LOCALE = 'auto';
 
@@ -874,7 +874,7 @@ Upload files </a>
                 objLazyGoogleReCaptchaV2.strLanguageKey = "en";
                 objLazyGoogleReCaptchaV2.strSiteKey = "6LflqXQUAAAAAP2CM782IqIgjzooEt9soXTCwxX2";
             </script>
-<link rel="stylesheet" type="text/css" media="all" href="/css/sign_in_form.css?v=271679788669" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/sign_in_form.css?v=271679790739" />
 <div id="sign-in" class="modal-container" tabindex="-1" role="dialog" aria-labelledby="createaccount-header signin-header" aria-hidden="true" style="display:none">
 <div class="modal-inner">
 
@@ -974,7 +974,7 @@ https://files.fm/ </span>
 I already have a Files.fm account » </div>
 <div id="createaccount_error_msg" class="error_msg"></div>
 <div class="sign_in_captcha" id="createaccount_captcha">
-<div class="google-recaptcha-v2-container" id="44A7766D-A070-7942-2EC8-0014A4C7C3F7"></div> <script>
+<div class="google-recaptcha-v2-container" id="3A6BBA78-31B4-DBA5-53CE-0CCF427EBD73"></div> <script>
                                 function loadCreateAccountCaptcha()
                                 {
                                     (function () {
@@ -983,7 +983,7 @@ I already have a Files.fm account » </div>
                 if ( typeof(objLazyGoogleReCaptchaV2) !== "undefined" )
                 {
                     objLazyGoogleReCaptchaV2.initInstance (
-                        "44A7766D-A070-7942-2EC8-0014A4C7C3F7",
+                        "3A6BBA78-31B4-DBA5-53CE-0CCF427EBD73",
                         captchaCreateAccountLoaded,
                         captchaCreateAccountSubmitted
                     )
@@ -1565,7 +1565,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
                                     $.ajax({
                                     type: "POST",
                                     dataType: "json",
-                                    url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                                    url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                                     data: {
                                         'check_email' : true ,
                                         'email' : $('#createaccount_email').val()
@@ -1605,7 +1605,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
                                                     $.ajax({
                                                         type: "POST",
                                                         dataType: "json",
-                                                        url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                                                        url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                                                         data: {
                                                             'check_username' : true ,
                                                             'username' : $('#createaccount_username').val()
@@ -1732,7 +1732,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
                                                                             $.ajax( {
                                                                                 type: "POST",
                                                                                 dataType: "json",
-                                                                                url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                                                                                url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                                                                                 data: postData,
                                                                                 success: function ( data )
                                                                                 {
@@ -1914,7 +1914,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
                     $.ajax( {
                         type: "POST",
                         dataType: "json",
-                        url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                        url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                         global: false,
                         data: {
                             'check_coupon': true,
@@ -1987,7 +1987,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
         $.ajax( {
             type: "POST",
             dataType: "json",
-            url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+            url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
             crossDomain: true,
             data: objPostData,
             success: function ( data )
@@ -2154,7 +2154,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
 				$.ajax({
 					type: "POST",
 					dataType: "json",
-					url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+					url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                     crossDomain: true,
                     data: {
 						'check_signin' : true ,
@@ -2243,7 +2243,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
 			$.ajax({
 				type: "POST",
 				dataType: "json",
-				url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+				url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 				data: {
 					'recover_password' : true ,
 					'email' : $('#forgotpassword_email').val()
@@ -2365,7 +2365,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
 			{
 				type: "POST",
 				dataType: "json",
-				url: "./ajax/sign_in.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+				url: "./ajax/sign_in.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 				data:
 				{
 					'get_username' : true ,
@@ -2490,7 +2490,7 @@ Log in <img src="/images/signup_form/sign_up.svg" alt="Log in">
 	
 	$( function()
 	{
-		objWebTorrentDownloadForm = new WebTorrentDownloadForm( 'c9f1dc11f92a4a6826c7fe110e1a3d119c990977' );
+		objWebTorrentDownloadForm = new WebTorrentDownloadForm( 'c266c14c74e73f901a1c758beedf08904ace1e88' );
 	} );
 
 </script>
@@ -2516,7 +2516,7 @@ Peer-to-Peer-Powered Download </div>
 <span id="webtorrent_download_form__main_content__wt_download__status__in_progress__value"></span>
 </div>
 <div id="webtorrent_download_form__main_content__wt_download__progress" class="progress-bar">
-<div id="webtorrent_download_form__main_content__wt_download__progress__bar_outer" class="progress-bar-outer"><div id="webtorrent_download_form__main_content__wt_download__progress__bar_inner" class="progress-bar-inner"></div></div>
+ <div id="webtorrent_download_form__main_content__wt_download__progress__bar_outer" class="progress-bar-outer"><div id="webtorrent_download_form__main_content__wt_download__progress__bar_inner" class="progress-bar-inner"></div></div>
 <div id="webtorrent_download_form__main_content__wt_download__progress__bar_text" class="progress-bar-text"></div>
 </div>
 
@@ -2571,7 +2571,7 @@ You can use <a href="https://www.vuze.com" target="_blank">Vuze</a> or other <a 
 <td>
 <i class="fa fa-check-circle"></i>
 </td>
-<td>
+ <td>
 <div class="alert_main_text"></div>
 </td>
 </tr>
@@ -3156,7 +3156,7 @@ You can use <a href="https://www.vuze.com" target="_blank">Vuze</a> or other <a 
 
             if ( this.strItemType == 'upload' )
             {
-            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
             	
             	objAjax_Data = {
                     'set_upload_hide_download_buttons': true ,
@@ -3241,7 +3241,7 @@ You can use <a href="https://www.vuze.com" target="_blank">Vuze</a> or other <a 
 
             if ( this.strItemType == 'upload' )
             {
-            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
             	
             	objAjax_Data = {
                     'set_upload_access_type' : true ,
@@ -3252,7 +3252,7 @@ You can use <a href="https://www.vuze.com" target="_blank">Vuze</a> or other <a 
             }
             else if ( this.strItemType == 'file' )
             {
-            	strAjax_Url = '/ajax/file_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+            	strAjax_Url = '/ajax/file_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
             	
             	objAjax_Data = {
                     'set_file_access_type' : true ,
@@ -3471,14 +3471,14 @@ You can use <a href="https://www.vuze.com" target="_blank">Vuze</a> or other <a 
 <script type="text/javascript">
 
 	var objUploadCopyForm = null;
-	var PHPSESSID = 'c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+	var PHPSESSID = 'c266c14c74e73f901a1c758beedf08904ace1e88';
 	
 	$( function()
 	{
 		objUploadCopyForm = new UploadCopyForm(
 			false ,
 			false ,
-			'c9f1dc11f92a4a6826c7fe110e1a3d119c990977' ,
+			'c266c14c74e73f901a1c758beedf08904ace1e88' ,
 			{
 				'Error-General' : 'Sorry, an error occurred while processing data. Please try again!' ,
 				'Error-FileSizeLimitExceeded' : 'Some of the files you selected for copying exceeds the file size limit for your account.' ,
@@ -3637,7 +3637,7 @@ Save </div>
 <div class="error_msg">An error occurred. Please try again!</div>
 <textarea class="gallery2__sidebar__info-value not_owner_hide gallery2__sidebar__file_description_value" placeholder="Add file description"></textarea>
 <div class="editable_field_save_button">
-Save </div>
+Save  </div>
 <div class="edit_wrapper_edit_button not_owner_hide"><div class="edit_wrapper_edit_button_icon"></div></div>
 </div>
 </div>
@@ -3657,7 +3657,7 @@ Save </div>
 Share </div>
 </div>
 <div id="gallery_upload-access-switch"></div>
- </div>
+</div>
 <div class="gallery2_item_info_padded buttons">
 <span id="gallery2__item_info_save" class="gallery2__sidebar__info-button half-button" onclick="modalGalleryDownloadFileBtn( strCurrentFileHash )">
 <a href="javascript:void(0);">
@@ -3668,7 +3668,7 @@ Delete this file </a>
 <a id="gallery2__item_info_edit" class="gallery2__sidebar__info-button gallery2__edit half-button" href="javascript:void(0)">
 Edit file </a>
 <a id="gallery2__sidebar__info-price" class="gallery2__sidebar__info-button" href="javascript:void(0)"></a>
-<div id="gallery2__sidebar__info-buy-products" class="gallery2__sidebar__info-button gallery2__button__buy-products">Buy prints</div>
+ <div id="gallery2__sidebar__info-buy-products" class="gallery2__sidebar__info-button gallery2__button__buy-products">Buy prints</div>
 <a href="javascript:void(0);" id="gallery2__sidebar__info_embed_button" class="gallery2__sidebar__info-button half-button">
 <span>Links</span>
 <span class="gallery2__sidebar__info_embed_short_text"></span>
@@ -3687,7 +3687,7 @@ Signed by:
 <div class="header-owner_image-wrapper"></div>
 <div>
 <div class="header-owner_title">
- User </div>
+User </div>
 <div class="header-owner_name"></div>
 </div>
 </div>
@@ -3725,7 +3725,7 @@ Size:
 </tr>
 <tr id="gallery2__sidebar__info-views">
 <td>
- Views:
+Views:
 </td>
 <td class="gallery2__sidebar__info-value">
 </td>
@@ -3749,7 +3749,7 @@ Comments:
 <ul class="fa-ul" id="gallery2__sidebar__info-data">
 <li id="gallery2__sidebar__info-tags">
 <div id="gallery_file_tags_container" class="file_tags_container ">
-<input class="file_tags_input" style="display:none" />
+ <input class="file_tags_input" style="display:none" />
 <div class="file_tags_error">An error occurred. Please try again!</div>
 </div>
 </li>
@@ -3781,7 +3781,7 @@ Add comment </div>
                             var CHAT_DATA = {
                                 // null - guest
                                 userId: null,
-                                phpSessid: 'c9f1dc11f92a4a6826c7fe110e1a3d119c990977',
+                                phpSessid: 'c266c14c74e73f901a1c758beedf08904ace1e88',
                                 fullChat: false,
                                 apiUrl: "https://files.fm/api/chat/",
                                 mainUrl: "https://files.fm/",
@@ -3805,7 +3805,7 @@ Add comment </div>
 <i class="fas fa-chevron-left"></i>
 </a>
 <div id="chatfm-app-wrapper">
- <div id="chatfm-app" class="chatfm-app"></div>
+<div id="chatfm-app" class="chatfm-app"></div>
 </div>
 </div>
 </div>
@@ -4002,7 +4002,7 @@ Add comment </div>
 		
 		$('#gallery_file_tags_container .file_tags_input').tagsInput(
 		{
-			'autocomplete_url': './ajax/file_tag.php?autocomplete&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977' ,
+			'autocomplete_url': './ajax/file_tag.php?autocomplete&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88' ,
 			'autocomplete': { selectFirst:false, autoFill:false},
 			'height' : 'auto',
 			'width' : '100%',
@@ -4015,7 +4015,7 @@ Add comment </div>
 				$.ajax({
 					type: "POST",
 					dataType: "json",
-					url: "./ajax/file_tag.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+					url: "./ajax/file_tag.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 					data: 
 					{
 						'add_file_tag': true ,
@@ -4048,7 +4048,7 @@ Add comment </div>
 				$.ajax({
 					type: "POST",
 					dataType: "json",
-					url: "./ajax/file_tag.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+					url: "./ajax/file_tag.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 					data: 
 					{
 						'delete_file_tag': true ,
@@ -5277,7 +5277,7 @@ Add comment </div>
                 $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url: "./ajax/delete_file.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                    url: "./ajax/delete_file.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                     data: {
                         'delete_user_file' : true ,
                         'f'             : strFileH ,
@@ -5522,7 +5522,7 @@ Add comment </div>
 
             $('#gallery_file_tags_container .file_tags_input').tagsInput(
             {
-                'autocomplete_url': './ajax/file_tag.php?autocomplete&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977' ,
+                'autocomplete_url': './ajax/file_tag.php?autocomplete&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88' ,
                 'autocomplete': { selectFirst:false, autoFill:false},
                 'height' : 'auto',
                 'width' : '100%',
@@ -5535,7 +5535,7 @@ Add comment </div>
                     $.ajax({
                         type: "POST",
                         dataType: "json",
-                        url: "./ajax/file_tag.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                        url: "./ajax/file_tag.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                         data: 
                         {
                             'add_file_tag': true ,
@@ -5568,7 +5568,7 @@ Add comment </div>
                     $.ajax({
                         type: "POST",
                         dataType: "json",
-                        url: "./ajax/file_tag.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+                        url: "./ajax/file_tag.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
                         data: 
                         {
                             'delete_file_tag': true ,
@@ -6908,11 +6908,11 @@ Add comment </div>
                             if ( bolIsFileConvertableToPdf ) 
                             {
                                 var strDateModified = ( typeof arrDatesModified != 'undefined' ? arrDatesModified[ intFileIndex ] : ( typeof arrModDate != 'undefined' ? arrModDate[ intFileIndex ] : '' ) );
-                            	strPdfSrc = 'https://' + arrFileHost[ intFileIndex ] + '/api/file/get_thumb_pdf.php?i=' + arrHashes[ intFileIndex ] + '&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977&dm=' + strDateModified + '&v=102&n=' + arrDisplayNames[ intFileIndex ] + '.pdf';
+                            	strPdfSrc = 'https://' + arrFileHost[ intFileIndex ] + '/api/file/get_thumb_pdf.php?i=' + arrHashes[ intFileIndex ] + '&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88&dm=' + strDateModified + '&v=102&n=' + arrDisplayNames[ intFileIndex ] + '.pdf';
                             }
                             else 
                             {
-                            	strPdfSrc = 'https://' + arrFileHost[ intFileIndex ] + '/down.php?pdf=1&truemimetype=1&i=' + arrHashes[ intFileIndex ] + '&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977&n=' + arrDisplayNames[ intFileIndex ];
+                            	strPdfSrc = 'https://' + arrFileHost[ intFileIndex ] + '/down.php?pdf=1&truemimetype=1&i=' + arrHashes[ intFileIndex ] + '&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88&n=' + arrDisplayNames[ intFileIndex ];
                             }
 
                         	$.ajax(
@@ -7288,12 +7288,12 @@ Add comment </div>
                 }
                 else
                 {
-                    var strVideoSrc = 'https://' + arrFileHost[ intFileIndex ]  + '/thumb_video/' + arrHashes[ intFileIndex ] + '' + strHttpCacheKey + '.mp4?v=1679788669&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+                    var strVideoSrc = 'https://' + arrFileHost[ intFileIndex ]  + '/thumb_video/' + arrHashes[ intFileIndex ] + '' + strHttpCacheKey + '.mp4?v=1679790739&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
 
                 	                    if ( arrExtensions[ intFileIndex ] == 'mp4' && ! arrFileAttributes[ intFileIndex ][ 'hasVideoThumb' ]  )
                     {
                     	$.get( strVideoSrc, function() {} );
-                    	strVideoSrc = 'https://' + arrFileHost[ intFileIndex ]  + '/down.php?i=' + arrHashes[ intFileIndex ] + '&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977&pv=1&' + strHttpCacheKey + '.mp4';
+                    	strVideoSrc = 'https://' + arrFileHost[ intFileIndex ]  + '/down.php?i=' + arrHashes[ intFileIndex ] + '&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88&pv=1&' + strHttpCacheKey + '.mp4';
                     }
                                      
                     strHtml += '<video playsinline id="video_' + arrHashes[ intFileIndex ] + '">'; //AD: playsinline fixes double controls on iPhone
@@ -8597,7 +8597,7 @@ Add comment </div>
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: "./ajax/file_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+			url: "./ajax/file_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 			data: 
 			{
 				'update_file_description': true ,
@@ -8630,7 +8630,7 @@ Add comment </div>
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: "./ajax/file_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+			url: "./ajax/file_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 			data: 
 			{
                 'without_extension': 1 ,
@@ -8875,12 +8875,12 @@ Add comment </div>
         else if ( strDownloadType == 'pdf' )
         {
         	var strDateModified = ( typeof arrDatesModified != 'undefined' ? arrDatesModified[ intItemIndex ] : ( typeof arrModDate != 'undefined' ? arrModDate[ intItemIndex ] : '' ) );
-            window.location = '/api/file/get_thumb_pdf.php?i=' + strFileHash + '&PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977&dm=' + strDateModified + '&v=102&n=' + arrDisplayNames[ intItemIndex ] + '.pdf';
+            window.location = '/api/file/get_thumb_pdf.php?i=' + strFileHash + '&PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88&dm=' + strDateModified + '&v=102&n=' + arrDisplayNames[ intItemIndex ] + '.pdf';
         }
         else if ( strDownloadType == 'mp4' )
         {
         	var strDateModified = ( typeof arrDatesModified != 'undefined' ? arrDatesModified[ intItemIndex ] : ( typeof arrModDate != 'undefined' ? arrModDate[ intItemIndex ] : '' ) );
-            window.location = '/thumb_video/' + strFileHash + '.mp4?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977&dm=' + strDateModified + '&v=102&n=' + arrDisplayNames[ intItemIndex ] + '.mp4';
+            window.location = '/thumb_video/' + strFileHash + '.mp4?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88&dm=' + strDateModified + '&v=102&n=' + arrDisplayNames[ intItemIndex ] + '.mp4';
         }
         else if ( strDownloadType == 'my-files' )
         {
@@ -9328,7 +9328,7 @@ Add comment </div>
 		arrDates_Unordered = ["2023-03-24"];
 		arrDatesCreated_Unordered = ["2023-03-24 22:58:43"];
 		arrDatesModified_Unordered = ["2023-03-24 22:56:28"];
-		arrViews_Unordered = [4];
+		arrViews_Unordered = [7];
 		arrDownloads_Unordered = [0];
 		arrDescriptions_Unordered = [""];
 		arrTags_Unordered = [""];
@@ -9379,7 +9379,7 @@ Add comment </div>
 		var arrDatesCreated = ["2023-03-24 22:58:43"];
 		var arrDatesModified = ["2023-03-24 22:56:28"];
 		var arrDatesDelete = [""];
-		var arrViews = [4];
+		var arrViews = [7];
 		var arrDownloads = [0];
 		var arrDescriptions = [""];
 		var arrTags = [""];
@@ -9505,7 +9505,7 @@ Add comment </div>
 		$.ajax({
 			type: "POST",
 			dataType: "json",
-			url: "./ajax/vote_for_file.php?i=PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+			url: "./ajax/vote_for_file.php?i=PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 			data: {
 				'vote' : true ,
 				'h' : strHash
@@ -9552,7 +9552,7 @@ Add comment </div>
 				$.ajax({
 					type: "POST",
 					dataType: "json",
-					url: "./ajax/delete_file.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977",
+					url: "./ajax/delete_file.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88",
 					data: {
 						'delete_file': true,
 						'k'			 : strKey,
@@ -9711,7 +9711,7 @@ This will help us to continue develop services and new features. Thank you! </di
 	
 	$( function()
 	{
-		objPosterForm = new PosterForm( 'c9f1dc11f92a4a6826c7fe110e1a3d119c990977' );
+		objPosterForm = new PosterForm( 'c266c14c74e73f901a1c758beedf08904ace1e88' );
 		objPosterForm.init();
 	} );
 
@@ -10388,7 +10388,7 @@ This will help us to continue develop services and new features. Thank you! </di
 
             if ( this.strItemType == 'upload' )
             {
-            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
             	
             	objAjax_Data = {
                     'set_upload_hide_download_buttons': true ,
@@ -10473,7 +10473,7 @@ This will help us to continue develop services and new features. Thank you! </di
 
             if ( this.strItemType == 'upload' )
             {
-            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+            	strAjax_Url = '/ajax/upload_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
             	
             	objAjax_Data = {
                     'set_upload_access_type' : true ,
@@ -10484,7 +10484,7 @@ This will help us to continue develop services and new features. Thank you! </di
             }
             else if ( this.strItemType == 'file' )
             {
-            	strAjax_Url = '/ajax/file_info.php?PHPSESSID=c9f1dc11f92a4a6826c7fe110e1a3d119c990977';
+            	strAjax_Url = '/ajax/file_info.php?PHPSESSID=c266c14c74e73f901a1c758beedf08904ace1e88';
             	
             	objAjax_Data = {
                     'set_file_access_type' : true ,
@@ -12147,7 +12147,7 @@ Send access </button>
 <form>
 <section class="file_embed_section" id="file_embed_section_image">
 <div class="file_embed_section_title">
-Image embedding codes on webpages (help: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b4c7c1c4c4dbc6c0f4d2ddd8d1c79ad2d9">[email&#160;protected]</a>) </div>
+Image embedding codes on webpages (help: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="8dfef8fdfde2fff9cdebe4e1e8fea3ebe0">[email&#160;protected]</a>) </div>
 <div class="file_embed_item" id="file_embed_item_image_html">
 <div class="more_options_popup_header more_options_popup_header_clear clearfix">
 <span class="more_options_popup_dropdown_wrapper">
@@ -12567,7 +12567,7 @@ Direct link including full path </span>
 <link rel="stylesheet" type="text/css" href="/new/css/popups/file_embed_popup.css?v=101">
 <script src="/js/inputs.js?v=1646219091"></script>
 <script src="/ts/chat/dist/index.js?v=1657793616"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114" integrity="sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==" data-cf-beacon='{"rayId":"7adb192f8a035770","version":"2023.3.0","b":1,"token":"920d49a89d024a45b0d7a0081fbadb80","si":100}' crossorigin="anonymous"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vb26e4fa9e5134444860be286fd8771851679335129114" integrity="sha512-M3hN/6cva/SjwrOtyXeUa5IuCT0sedyfT+jK/OV+s+D0RnzrTfwjwJHhd+wYfMm9HJSrZ1IKksOdddLuN6KOzw==" data-cf-beacon='{"rayId":"7adb4bb5ff958274","version":"2023.3.0","b":1,"token":"920d49a89d024a45b0d7a0081fbadb80","si":100}' crossorigin="anonymous"></script>
 </body>
 </html>
 <!--[if IE 7]>
