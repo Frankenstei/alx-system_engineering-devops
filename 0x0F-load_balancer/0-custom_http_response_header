@@ -1,9 +1,30 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2154
-# This script configures Nginx so that its HTTP response contains a custom
-# header.
+# Install Nginx with server 0x01 config
+# add HTTP header named X-Served-By $HOSTNAME
 
-sudo apt update
-sudo apt install nginx -y
-sudo sed -i "20i\        add_header X-Served-By $HOSTNAME;" /etc/nginx/nginx.conf
+apt-get update
+apt-get install -y nginx
+
+mkdir -p /var/www/html
+touch /var/www/html/index.html
+echo "Loveday" > /var/www/html/index.html
+touch /var/www/html/404.html
+echo "can't find page page" > /var/www/html/404.html
+
+printf %s "server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+    add_header X-Served-By $HOSTNAME;
+    root   /var/www/html;
+    index  index.html index.htm;
+    location /redirect_me {
+        return 301 https://www.youtube.com/watch?v=xJJsoquu70o/;
+    }
+    error_page 404 /404.html;
+    location /404 {
+      root /var/www/html;
+      internal;
+    }
+}" > /etc/nginx/sites-enabled/default
+
 sudo service nginx restart
