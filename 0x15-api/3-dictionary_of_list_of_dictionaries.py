@@ -1,39 +1,33 @@
 #!/usr/bin/python3
-
 """
-Python script that exports data in the JSON format.
+Using https://jsonplaceholder.typicode.com
+gathers data from API and exports it to JSON file
+Implemented using recursion
 """
-
-from requests import get
 import json
+import requests
 
-if __name__ == "__main__":
-    response = get('https://jsonplaceholder.typicode.com/todos/')
-    data = response.json()
 
-    row = []
-    response2 = get('https://jsonplaceholder.typicode.com/users')
-    data2 = response2.json()
+API = "https://jsonplaceholder.typicode.com"
+"""REST API url"""
 
-    new_dict1 = {}
 
-    for j in data2:
-
-        row = []
-        for i in data:
-
-            new_dict2 = {}
-
-            if j['id'] == i['userId']:
-
-                new_dict2['username'] = j['username']
-                new_dict2['task'] = i['title']
-                new_dict2['completed'] = i['completed']
-                row.append(new_dict2)
-
-        new_dict1[j['id']] = row
-
-    with open("todo_all_employees.json",  "w") as f:
-
-        json_obj = json.dumps(new_dict1)
-        f.write(json_obj)
+if __name__ == '__main__':
+    users_res = requests.get('{}/users'.format(API)).json()
+    todos_res = requests.get('{}/todos'.format(API)).json()
+    users_data = {}
+    for user in users_res:
+        id = user.get('id')
+        user_name = user.get('username')
+        todos = list(filter(lambda x: x.get('userId') == id, todos_res))
+        user_data = list(map(
+            lambda x: {
+                'username': user_name,
+                'task': x.get('title'),
+                'completed': x.get('completed')
+            },
+            todos
+        ))
+        users_data['{}'.format(id)] = user_data
+    with open('todo_all_employees.json', 'w') as file:
+        json.dump(users_data, file)
